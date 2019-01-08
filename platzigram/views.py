@@ -1,6 +1,7 @@
 """platzigram views"""
 from django.http import HttpResponse
 from django.http import JsonResponse
+import json
 
 # Utilities
 from datetime import datetime
@@ -14,8 +15,25 @@ def hola_mundo(request):
     ))
 
 
-def hi(request):
-    """Just a hi"""
+def sorted_integers(request):
+    """Return a Json with sorted integers"""
     numbers = sorted(request.GET['numbers'].split(","))
-    response = JsonResponse([numbers], safe=False)
+    data = {
+        'status': 'ok',
+        'numbers': numbers,
+        'message': "Integers sorted successfully."
+    }
+    response = JsonResponse(
+            [data],
+            json_dumps_params = {'indent': 4},
+            safe=False
+        )
     return response
+
+
+def say_hi(request, name, age):
+    """Return a validation"""
+    if age < 12:
+        return HttpResponse("Sorry {} your not allowed to use this application".format(name))
+    else:
+        return HttpResponse("Hello {}, nice to have you here".format(name))
