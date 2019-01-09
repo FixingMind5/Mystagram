@@ -16,20 +16,20 @@ posts = [
     {
         'title': 'Here I\'m',
         'user': {
-            'name': 'Monica Sevilla',
-            'picture': 'https://picsum.photos/50/50/?image=996',
+            'name': 'Yari Ramirez',
+            'picture': 'https://picsum.photos/50/50/?image=1081',
         },
         'timestamp': datetime.now().strftime('%b %dth, %Y - %H:%M hrs'),
         'photo': 'https://picsum.photos/400/400/?image=1020',
     },
     {
-        'title': 'Al verte así',
+        'title': 'Something irreflexive',
         'user': {
             'name': 'Manuel Aguilar',
-            'picture': 'https://picsum.photos/50/50/?image=1004',
+            'picture': 'https://picsum.photos/50/50/?image=1044',
         },
         'timestamp': datetime.now().strftime('%b %dth, %Y - %H:%M hrs'),
-        'photo': 'https://picsum.photos/400/400/?image=1011',
+        'photo': 'https://picsum.photos/400/400/?image=1031',
     }
 ]
 
