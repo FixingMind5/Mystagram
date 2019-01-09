@@ -23,3 +23,8 @@ def logout_view(request):
     """Logout a user"""
     logout(request)
     return redirect('login')
+
+
+def sign_up(request):
+    """Sign up view"""
+    return render(request, 'users/signup.html')
