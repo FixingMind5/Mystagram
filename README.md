@@ -1,2 +1,2 @@
 # Platzigram
-Aplicación creada basandonos en el curso de django de platzi.
+Aplicación creada en el curso de django de platzi.
