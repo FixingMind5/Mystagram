@@ -15,7 +15,15 @@ class User(models.Model):
 
     bio = models.TextField(blank=True)
 
-    brithdate = models.DateField(blank=True, null=True)
+    birthdate = models.DateField(blank=True, null=True)
 
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)
+
+    city = models.CharField(max_length=50)
+    country = models.CharField(max_length=70)
+
+
+def __str__(self):
+    """return email"""
+    return self.email
