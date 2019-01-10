@@ -53,3 +53,8 @@ def sign_up(request):
 
         return redirect('login')
     return render(request, 'users/signup.html')
+
+
+def update_profile(request):
+    """Updtae a users profile"""
+    return render(request, 'users/update_profile.html')
